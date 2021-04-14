@@ -1,0 +1,5 @@
+.dropdown:after {
+  content: "";
+  transform: rotate(135deg);
+  @apply block absolute right-3 top-0 w-2.5 h-2.5 border border-white border-l-0 border-b-0;
+}

@@ -1,0 +1,98 @@
+.button {
+  border-radius: 22px;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.2) 16px 13px 8px 0;
+  @apply flex text-white items-center px-3 py-2 relative hover:text-white;
+}
+
+.button::before {
+  background-color: #333335;
+  content: "";
+  border-radius: 22px;
+  z-index: -1;
+  @apply block absolute top-0 right-0 w-full h-full;
+  transition: 1s translate;
+}
+
+.button:hover::before {
+  background-image: linear-gradient(to right, #747474, #888888);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.button:active::before {
+  background-image: linear-gradient(to right, #747474, #888888);
+}
+
+.button::after {
+  content: "";
+  border-radius: 22px;
+  z-index: -2;
+  top: 2px;
+  right: -3px;
+  background-image: linear-gradient(to top, #1d1d1f, #98a0ac);
+  @apply block absolute w-full h-full;
+}
+
+.button__text-next::after {
+  content: "";
+  @apply block absolute right-3 top-3 transform rotate-45 w-2.5 h-2.5 border border-white border-l-0 border-b-0;
+}
+
+.button--rounded {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 8px 7px 4px 0;
+}
+
+.button--rounded::before,
+.button--rounded::after {
+  border-radius: 50%;
+}
+
+.button--filter {
+  @apply text-black h-12 bg-ocean flex items-center justify-center rounded-3xl w-40;
+}
+
+.button--filter:hover {
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.4) 16px 13px 8px 0;
+  @apply flex text-white items-center px-3 py-2 relative bg-transparent;
+}
+
+.button--filter:hover::before {
+  background-color: #333335;
+  content: "";
+  border-radius: 22px;
+  z-index: -1;
+  @apply block absolute top-0 right-0 w-full h-full;
+}
+
+.button--filter:hover::after {
+  content: "";
+  border-radius: 22px;
+  z-index: -2;
+  top: 2px;
+  right: -3px;
+  background-image: linear-gradient(to top, #1d1d1f, #98a0ac);
+  @apply block absolute w-full h-full;
+}
+
+.button--add {
+  width: 125px;
+  height: 26px;
+  font-size: 10px;
+}
+
+.button--add:hover {
+  @apply p-0;
+}
+
+.button--buy {
+  width: 125px;
+  font-size: 10px;
+  height: 26px;
+  @apply bg-green text-white;
+}

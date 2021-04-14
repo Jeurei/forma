@@ -1,0 +1,40 @@
+.drop-container {
+  background-color: transparent;
+}
+
+.dropdown > .caption {
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.dropdown > .list {
+  position: absolute;
+  background-color: #f9f7f6;
+  width: calc(100% + 20px);
+  border-radius: 0 0 3px 3px;
+  display: none;
+  z-index: 10;
+  top: 32px;
+}
+
+.dropdown > .list > .item {
+  padding: 11px 24px;
+  cursor: pointer;
+}
+
+.dropdown > .list > .item.selected {
+  font-weight: bold;
+}
+
+.dropdown.open > .caption {
+  border-radius: 3px 3px 0 0;
+}
+
+.dropdown.open > .list {
+  display: block;
+}
+
+.drop-container .dropdown::after {
+  display: none;
+}

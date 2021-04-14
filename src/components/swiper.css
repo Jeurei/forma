@@ -1,0 +1,9 @@
+.swiper-container {
+  padding-bottom: 40px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 25px !important;
+  color: #4e4e52 !important;
+}

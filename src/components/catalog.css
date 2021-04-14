@@ -1,0 +1,111 @@
+.catalog {
+  min-height: 660px;
+  background-color: #f9f7f6;
+}
+
+.catalog__list {
+  position: relative;
+}
+
+.catalog__list::before {
+  content: "";
+  display: none;
+  background-color: #000;
+  height: 660px;
+  width: 1px;
+  position: absolute;
+}
+
+.catalog__container {
+  grid-template-columns: 1fr;
+  margin-bottom: 20px;
+}
+
+.catalog__container--reverse {
+  grid-template-columns: 1fr;
+}
+
+.catalog__card-label {
+  @apply w-20 h-7 rounded-3xl flex items-center justify-center mb-2;
+}
+
+.catalog__card-label--new {
+  @apply bg-green;
+}
+
+.catalog__card-label--hit {
+  background-color: #d96352;
+}
+
+.catalog__card-label--share {
+  background-color: #f7a859;
+}
+
+@media (min-width: theme("screens.md")) {
+  .catalog__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: theme("screens.lg")) {
+  .catalog__list::before {
+    display: block;
+  }
+
+  .catalog__container {
+    grid-template-columns: 1fr 1fr 1.5fr;
+  }
+
+  .catalog__container--reverse {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
+  .catalog__pagination {
+    right: -40px;
+    top: 60px;
+  }
+
+  .catalog__pagination-item {
+    border-radius: 50%;
+    background-color: transparent;
+    width: 34px;
+    height: 34px;
+    color: #333335;
+    border: 1px solid #333335;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .catalog__pagination-item::before {
+    background-color: #333335;
+    content: "";
+    border-radius: 22px;
+    z-index: 2;
+    @apply hidden absolute top-0 right-0 w-full h-full;
+    transition: 1s translate;
+  }
+
+  .catalog__pagination-item::after {
+    content: "";
+    border-radius: 22px;
+    z-index: 1;
+    top: 2px;
+    right: -3px;
+    background-image: linear-gradient(to top, #1d1d1f, #98a0ac);
+    @apply hidden absolute w-full h-full;
+  }
+
+  .catalog__pagination-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 16px 13px 8px 0;
+    @apply flex text-white items-center px-3 py-2 relative hover:text-white;
+  }
+
+  .catalog__pagination-item:hover::before {
+    display: block;
+  }
+
+  .catalog__pagination-item:hover::after {
+    display: block;
+  }
+}

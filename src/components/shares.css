@@ -1,0 +1,57 @@
+.share {
+  background-color: transparent;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.share--evasion {
+  background-image: url("./img/evasion-bg.png");
+  background-size: cover;
+}
+
+.share--evasion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-size: 636px 585px;
+  background-image: url("./img/evasion-before.png");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: theme("screens.md")) {
+  .share {
+    width: 625px;
+    min-height: 560px;
+  }
+
+  .share--evasion {
+    background-size: contain;
+  }
+
+  .share--evasion::before {
+    display: block;
+    height: 200px;
+    top: 330px;
+  }
+}
+
+@media (min-width: theme("screens.lg")) {
+  .share--evasion::before {
+    height: 100%;
+    top: 0;
+  }
+}
+
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .share--evasion {
+    background-image: url("./img/evasion-bg@2x.png");
+  }
+
+  .share--evasion::before {
+    background-image: url("./img/evasion-before@2x.png");
+  }
+}

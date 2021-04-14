@@ -1,0 +1,25 @@
+.mm-listitem::after {
+  left: 0 !important;
+}
+
+.mmenu__soc-link {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 25px;
+}
+
+.mmenu__soc-link--vk {
+  background-image: url("./img/vk.svg");
+}
+
+.mmenu__soc-link--fb {
+  background-image: url("./img/fb.svg");
+}
+
+.mmenu__soc-link--yt {
+  background-image: url("./img/yt.svg");
+}
+
+.mmenu__soc-link--inst {
+  background-image: url("./img/inst.svg");
+}

@@ -1,0 +1,22 @@
+.search__input {
+  width: 100%;
+  border-radius: 38px;
+  min-height: 39px;
+}
+
+.search__icon {
+  top: 11px;
+  right: 20px;
+}
+
+@media (min-width: theme("screens.md")) {
+  .search__input {
+    width: 485px;
+  }
+}
+
+@media (min-width: theme("screens.lg")) {
+  .search__input {
+    width: 585px;
+  }
+}

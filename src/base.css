@@ -1,0 +1,41 @@
+html {
+  @apply box-border;
+}
+
+*,
+*::before,
+*::after {
+  @apply box-border;
+}
+
+body {
+  @apply font-main min-w-sm p-0 m-0 bg-white text-sm leading-4 overflow-x-hidden;
+}
+
+a {
+  @apply text-black outline-none no-underline hover:text-black;
+}
+
+svg {
+  @apply w-auto h-auto;
+}
+
+img {
+  @apply max-w-full h-auto;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+@media (min-width: theme("screens.md")) {
+  body {
+    @apply min-w-md;
+  }
+}
+
+@media (min-width: theme("screens.lg")) {
+  body {
+    @apply min-w-lg;
+  }
+}

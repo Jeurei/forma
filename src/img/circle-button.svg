@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164.027" height="122" viewBox="0 0 164.027 122">
+  <g id="Сгруппировать_9403" data-name="Сгруппировать 9403" transform="translate(-1342.973 -3635)">
+    <g id="Сгруппировать_17" data-name="Сгруппировать 17" transform="translate(893 2900)">
+      <g id="Эллипс_4" data-name="Эллипс 4" transform="translate(492 735)" fill="none" stroke="#333335" stroke-width="1">
+        <circle cx="61" cy="61" r="61" stroke="none"/>
+        <circle cx="61" cy="61" r="60.5" fill="none"/>
+      </g>
+    </g>
+    <g id="arrow" transform="translate(1343.473 3660)">
+      <path id="Line" d="M3,12H116.8" transform="translate(-3 23.734)" fill="none" stroke="#333335" stroke-linecap="round" stroke-width="1" fill-rule="evenodd"/>
+      <path id="Head" d="M13,4,33.165,24.165,13,44.329" transform="translate(81.363 11.57)" fill="none" stroke="#333335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

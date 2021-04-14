@@ -1,0 +1,32 @@
+.footer__top {
+  backgroun-image: url("./img/footer-bg.png");
+  background-size: 130vw 408px;
+  background-position: top;
+  min-height: 590px;
+  background-repeat: no-repeat;
+  @apply bg-footerBg;
+}
+
+.footer .button__text::after {
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+}
+
+@media (min-width: theme("screens.md")) {
+  .footer__top {
+    min-height: 840px;
+  }
+
+  .footer .button__text::after {
+    top: 30px;
+    right: 30px;
+  }
+}
+
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .footer__top {
+    background-image: url("./img/footer-bg@2x.png");
+  }
+}

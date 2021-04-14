@@ -1,0 +1,53 @@
+.filter__icon {
+  display: none;
+  left: -24px;
+  top: 10px;
+}
+
+.filter__routed-text {
+  display: none;
+  left: 20px;
+  transform: rotate(-90deg) translate(-120px, -400px);
+}
+
+.filter__control {
+  color: #000;
+  position: relative;
+  padding-bottom: 9px;
+  display: flex;
+  margin-right: 0;
+  justify-content: center;
+  margin-bottom: 10px;
+  min-width: 100px;
+}
+
+.filter__control::after {
+  content: "";
+  display: block;
+  width: calc(100% + 20px);
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: theme("screens.md")) {
+  .filter__control {
+    margin-right: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 1380px) {
+  .filter__icon {
+    display: block;
+  }
+
+  .filter__routed-text {
+    display: block;
+  }
+}
