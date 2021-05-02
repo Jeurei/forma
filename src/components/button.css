@@ -5,6 +5,10 @@
   @apply flex text-white items-center px-3 py-2 relative hover:text-white;
 }
 
+.button--absolute {
+  position: absolute;
+}
+
 .button::before {
   background-color: #333335;
   content: "";
@@ -53,7 +57,7 @@
 }
 
 .button--filter {
-  @apply text-black h-12 bg-ocean flex items-center justify-center rounded-3xl w-40;
+  @apply text-black h-12 bg-ocean flex items-center justify-center rounded-3xl w-40 mb-3;
 }
 
 .button--filter:hover {
@@ -84,6 +88,7 @@
   width: 125px;
   height: 26px;
   font-size: 10px;
+  margin-bottom: 0;
 }
 
 .button--add:hover {
@@ -94,5 +99,26 @@
   width: 125px;
   font-size: 10px;
   height: 26px;
-  @apply bg-green text-white;
+  @apply bg-green text-white mb-0;
+}
+
+.button__arrow {
+  position: relative;
+  min-height: 0.625rem;
+}
+
+.button__arrow--left::after,
+.button__arrow--right::after {
+  content: "";
+  right: 35px;
+  @apply block absolute top-0 w-2.5 h-2.5
+    border border-white border-l-0 border-b-0;
+}
+
+.button__arrow--left::after {
+  transform: rotate(-135deg);
+}
+
+.button__arrow--right::after {
+  transform: rotate(45deg);
 }

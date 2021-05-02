@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Продукт</title>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <div class="header-top min-w-full bg-no-repeat bg-green py-3 px-3">
+          <div
+            class="container flex sm:flex-col md:flex-row items-center text-white relative"
+          >
+            <div
+              class="sm:text-center sm:flex-col sm:items-center md:items-center md:flex-row flex md:text-left mb-5 md:mr-auto leading-5"
+            >
+              <img
+                src="static/logo.svg"
+                alt=""
+                width="135"
+                height="72"
+                class="mr-2 sm:mb-2 md:mb-0 sm:block lg:hidden sm:w-15 sm:h-12 md:w-12 md:h-15 md:self-center"
+              />
+              <img
+                src="static/logo.svg"
+                alt=""
+                width="135"
+                height="72"
+                class="mr-2 sm:hidden lg:block"
+              />
+              <span class="font-alt md:text-sm lg:text-base uppercase"
+                >Магазин<br />профессиональной<br />
+                косметики</span
+              >
+              <div class="header-mmenu sm:block absolute right-0 md:hidden">
+                <a class="header__burger" href="#menu"></a>
+              </div>
+            </div>
+            <div class="w-full md:w-auto">
+              <div class="search__input flex bg-searchBg relative mb-3">
+                <input
+                  type="search"
+                  placeholder="Поиск по каталогу"
+                  class="appearance-none border-none bg-transparent placeholder-black text-black min-h-full min-w-full pl-5"
+                />
+                <svg
+                  class="search__icon absolute top-3 right-0"
+                  width="17"
+                  height="16.998"
+                  viewBox="0 0 17 16.998"
+                >
+                  <g id="Page-1" transform="translate(-747.234 -554.786)">
+                    <g
+                      id="icon-111-search"
+                      transform="translate(747.234 554.786)"
+                    >
+                      <path
+                        id="search"
+                        d="M757.889,567.028a6.744,6.744,0,1,1,1.587-1.587l4.432,4.432a1.106,1.106,0,0,1,0,1.568l-.019.018a1.11,1.11,0,0,1-1.568,0l-4.432-4.432Zm-3.91-.339a5.158,5.158,0,1,0-5.158-5.158,5.158,5.158,0,0,0,5.158,5.158Z"
+                        transform="translate(-747.234 -554.786)"
+                        fill="#333335"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <ul
+                class="flex items-center sm:hidden md:flex justify-between lg:pr-3"
+              >
+                <li class="flex justify-center flex-col">
+                  <span class="text-xs">Телефон</span>
+                  <a class="text-white hover:text-white" href="tel:+7342222222"
+                    >+7 (342) 222-22-22</a
+                  >
+                </li>
+                <li class="flex justify-center flex-col">
+                  <span class="text-xs">Почта</span>
+                  <a
+                    class="text-white hover:text-white"
+                    href="mailto:coformaopt@mail.ru"
+                    >coformaopt@mail.ru</a
+                  >
+                </li>
+                <li class="flex justify-center flex-col relative">
+                  <div class="drop-container">
+                    <div class="dropdown font-main">
+                      <div class="caption flex flex-col">
+                        <span class="text-xs">Ваш язык</span>
+                        <span class="relative dropdown--inner">RU</span>
+                      </div>
+                      <div class="list">
+                        <div class="item text-black">RU</div>
+                        <div class="item text-black">EU</div>
+                        <div class="item text-black">CZ</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="w-12 h-12">
+                  <button
+                    type="button"
+                    class="button cart__button min-w-full min-h-full flex items-center relative"
+                  >
+                    <svg
+                      class="cart__icon absolute"
+                      width="19.5"
+                      height="21.5"
+                      viewBox="0 0 19.5 21.5"
+                    >
+                      <g
+                        id="Сгруппировать_9405"
+                        data-name="Сгруппировать 9405"
+                        transform="translate(-0.25 1.75)"
+                      >
+                        <path
+                          id="Shape"
+                          d="M0,0H18"
+                          transform="translate(1 3.601)"
+                          fill="#46b4ac"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          id="Shape-2"
+                          data-name="Shape"
+                          d="M12,20H2a2,2,0,0,1-2-2V4H3V2A2,2,0,0,1,5,0H9a2,2,0,0,1,2,2V4h3V18A2,2,0,0,1,12,20Z"
+                          transform="translate(3 -1)"
+                          fill="none"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          id="Shape-3"
+                          data-name="Shape"
+                          d="M0,0V6"
+                          transform="translate(8 8.444)"
+                          fill="#46b4ac"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          id="Shape-4"
+                          data-name="Shape"
+                          d="M0,0V6"
+                          transform="translate(12 8.444)"
+                          fill="#46b4ac"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          stroke-width="1.5"
+                        />
+                      </g>
+                    </svg>
+                    <span
+                      class="cart__items absolute top-0 -right-2 bg-yellow-600 w-5 h-5 rounded-full flex items-center justify-center"
+                      >5</span
+                    >
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="min-w-full sm:hidden md:block md:px-2 bg-black relative">
+          <div class="container">
+            <ul class="flex justify-between items center min-w-full">
+              <li class="header__menu-item py-4">
+                <a class="text-white hover:text-white" href="#">Продукция</a>
+                <div class="header__menu-sub hidden absolute">
+                  <ul class="container flex items-center flex-wrap">
+                    <li class="button--filter">Категория 1</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="py-4">
+                <a class="text-white hover:text-white" href="#">Акции</a>
+              </li>
+              <li class="py-4">
+                <a class="text-white hover:text-white" href="#">Статьи</a>
+              </li>
+              <li class="py-4">
+                <a class="text-white hover:text-white" href="#"
+                  >Способы оплаты</a
+                >
+              </li>
+              <li class="py-4">
+                <a class="text-white hover:text-white" href="#"
+                  >Доставка и возврат</a
+                >
+              </li>
+              <li class="py-4">
+                <a class="text-white hover:text-white" href="#">О компании</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h1 class="hidden">ABSOLUT AIR</h1>
+        <section class="product mb-16">
+          <div class="container">
+            <div class="breadcrumbs">
+              <ul class="flex">
+                <li class="breadcrumb font-alt text-xs text-black">Главная</li>
+                <li class="breadcrumb font-alt text-xs text-black">Каталог</li>
+                <li class="breadcrumb font-alt text-xs text-black">
+                  Тональные средства
+                </li>
+                <li class="breadcrumb font-alt text-xs text-black">Крем</li>
+                <li class="breadcrumb font-alt text-xs text-black">
+                  Absolut Air
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col md:flex-row lg:pl-10 relative">
+              <div
+                class="flex absolute sm:hidden md:flex -left-3 top-1/2 transform rotate-90 -translate-x-1/2 justify-center md:justify-end"
+              >
+                <button
+                  class="button flex justify-center items-center w-28"
+                  type="button"
+                >
+                  <span
+                    class="button__arrow button__arrow--left w-full h-full block"
+                  ></span>
+                </button>
+                <button
+                  class="button flex justify-center items-center ml-3 w-28"
+                  type="button"
+                >
+                  <span
+                    class="button__arrow button__arrow--right w-full h-full block"
+                  ></span>
+                </button>
+              </div>
+              <div class="flex px-2 mb-4 md:mb-0">
+                <ul
+                  class="products__first-col flex w-full md:flex-col min-h-full justify-between"
+                >
+                  <li class="product__video relative">
+                    <img
+                      src="static/product-cream-3.png"
+                      width="96"
+                      height="122"
+                    />
+                    <div class="product__play-container absolute">
+                      <button class="button flex justify-center items-center">
+                        <svg
+                          width="11.63"
+                          height="12.511"
+                          viewBox="0 0 11.63 12.511"
+                        >
+                          <g transform="translate(0 0)">
+                            <path
+                              d="M253.753,459.47c.388.211.774.425,1.163.634l10.293,5.54.145.08-11.626,6.256v-.163q0-6.113,0-12.226c0-.041,0-.081,0-.122Z"
+                              transform="translate(-253.725 -459.47)"
+                              fill="#fff"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <span>Play</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img
+                      src="static/product-cream-2.png"
+                      width="96"
+                      height="122"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="static/product-cream-1.png"
+                      width="96"
+                      height="122"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="flex w-full sm:flex-col sm:px-2 md:px-0 md:flex-row lg:pr-20"
+              >
+                <div class="relative md:mr-6 lg:mr-8">
+                  <img src="static/product-cream-big.png" class="h-full" />
+                  <button
+                    class="button bottom-4 right-4 button--absolute flex items-center justify-center w-10 h-10"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="flex-grow relative">
+                  <h2 class="font-alt text-4xl mb-3">ABSOLUT AIR</h2>
+                  <p class="text-base mb-7">
+                    Комплекс для благоприятного клеточного дыхания
+                  </p>
+                  <ul class="flex flex-col">
+                    <li
+                      class="pb-2 flex mb-5 border border-dashed border-l-0 border-t-0 border-r-0"
+                    >
+                      <span class="mr-auto">Объем: </span><span>50 мл</span>
+                    </li>
+                    <li
+                      class="pb-2 flex border mb-5 border-dashed border-l-0 border-t-0 border-r-0"
+                    >
+                      <span class="mr-auto">Назначение: </span><span>Акне</span>
+                    </li>
+                    <li
+                      class="pb-2 flex border mb-5 border-dashed border-l-0 border-t-0 border-r-0"
+                    >
+                      <span class="mr-auto">Объем: </span><span>50 мл</span>
+                    </li>
+                    <li
+                      class="pb-2 flex border mb-5 border-dashed border-l-0 border-t-0 border-r-0"
+                    >
+                      <span class="mr-auto">Объем: </span><span>50 мл</span>
+                    </li>
+                  </ul>
+                  <div class="grid grid-cols-1 gap-x-6">
+                    <div class="flex items-center mb-4">
+                      <span class="price--old price--old--big">5 000 руб.</span
+                      ><button type="button" class="button--filter button--add">
+                        Добавить в корзину
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="price price--big">3 999 руб.</span
+                      ><button type="button" class="button--filter button--buy">
+                        Купить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <ul
+                  class="absolute flex flex-col sm:top-36 md:top-0 md:-right-7 right-4 font-alt text-white"
+                >
+                  <li class="catalog__card-label catalog__card-label--new">
+                    <span class="flex items-center justify-center w-full h-full"
+                      >Новинка</span
+                    >
+                  </li>
+                  <li class="catalog__card-label catalog__card-label--hit">
+                    <span class="flex items-center justify-center w-full h-full"
+                      >Хит</span
+                    >
+                  </li>
+                  <li class="catalog__card-label catalog__card-label--share">
+                    <span
+                      class="flex items-center font-alt justify-center w-full h-full"
+                      >Акция</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pb-24">
+          <div class="container flex sm:flex-col lg:flex-row">
+            <article
+              class="product__article flex flex-col article article px-5 py-6 bg-beige mr-8"
+            >
+              <span class="text-xl font-alt uppercase mb-8"
+                >Статьи о товаре</span
+              >
+              <div class="article__img-container mb-3 relative">
+                <picture class="sm:hidden md:block">
+                  <img
+                    class="article__img absolute bottom-5 left-5"
+                    src="static/absolute-air.png"
+                    srcset="static/absolute-air@2x.png 2x"
+                    alt="Изображение Absolute Air"
+                  />
+                </picture>
+              </div>
+              <div class="mb-auto">
+                <h3 class="font-alt uppercase text-xl mb-3">BIO INTERGAL</h3>
+                <p class="text-sm">
+                  Комплекс для благоприятного<br />клеточного дыхания
+                </p>
+              </div>
+              <div class="flex flex-col md:flex-row">
+                <a href="#" class="flex sm:mb-5 md:mb-0 items-center w-full"
+                  ><span class="mr-3.5 font-medium">Подробнее</span>
+                  <button
+                    type="button"
+                    class="button button--rounded w-9 h-9 text-2xl justify-center"
+                  >
+                    +
+                  </button>
+                </a>
+                <div class="flex justify-center">
+                  <button
+                    class="button h-8 flex justify-center items-center w-28"
+                    type="button"
+                    id="prev"
+                  >
+                    <span
+                      class="button__arrow button__arrow--left w-full h-full block"
+                    ></span>
+                  </button>
+                  <button
+                    class="button h-8 flex justify-center items-center ml-3 w-28"
+                    type="button"
+                    id="next"
+                  >
+                    <span
+                      class="button__arrow button__arrow--right w-full h-full block"
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <div class="product__descr px-5 pt-3 lg:pr-24 flex flex-col">
+              <ul class="flex sm:flex-col md:flex-row mb-6">
+                <li class="filter__control font-alt text-base">Описание</li>
+                <li class="filter__control font-alt text-base">Состав</li>
+                <li class="filter__control font-alt text-base">Показания</li>
+                <li class="filter__control font-alt text-base">Рекомендации</li>
+              </ul>
+              <p class="mb-6 text-sm leading-6">
+                Комплекс для благоприятного клеточного дыхания и одновременно
+                ловушка свободных радикалов: нейтрализует высвобождающиеся при
+                дыхании клетки
+                <a href="#" class="text-orange">свободные радикалы</a>,
+                разрушающие все клеточные структуры.
+              </p>
+              <h4 class="font-alt text-base mb-6">Механизм действия</h4>
+              <p class="mb-6 text-sm leading-6">
+                Митохондрии-органеллы, осуществляют клеточное дыхание, точнее
+                «сжигание» питательных веществ в кислороде. При этом какой-то
+                процент кислорода митохондриями превращается в очень опасные
+                вещества – свободные радикалы. И это одна из основных причин
+                старения тканей и конкретно кожи. В соответствии с программой
+                старения в митохондриях с возрастом увеличивается выработка
+                свободных радикалов, у организма не хватает ресурса их
+                нейтрализовать, и они ускоряют процесс старения кожи.
+              </p>
+              <p class="text-sm mb-6 leading-6">
+                Двойные ловушки свободных радикалов, благодаря инновационной
+                формуле, действуют синергично и блокируют свободные радикалы,
+                останавливая процесс преждевременного старения и увядания кожи.
+                Регенерирующие компоненты запускают цикл реакций на поэтапное
+                обновление клеточных слоев, мультикомплекс пептидов
+                восстанавливает сосуды и предотвращает купероз.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer bg-footerBg">
+        <section
+          class="flex flex-col footer__top sm:pt-10 md:pt-15 lg:pt-20 relative"
+        >
+          <div class="container">
+            <h2 class="font-alt flex justify-center mb-5 text-4xl">Акции</h2>
+            <div class="mb-3">
+              <div class="flex sm:justify-center mb-5 md:justify-end">
+                <button
+                  class="button flex justify-center items-center w-28"
+                  type="button"
+                >
+                  <span
+                    class="button__arrow button__arrow--left w-full h-full block"
+                  ></span>
+                </button>
+                <button
+                  class="button flex justify-center items-center ml-3 w-28"
+                  type="button"
+                >
+                  <span
+                    class="button__arrow button__arrow--right w-full h-full block"
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col md:pt-6 relative">
+              <article
+                class="share share--evasion flex flex-col self-end sm:p-7 mb:pt-14 pb-20 pl-20 pr-16"
+              >
+                <time class="text-footerBg text-xl mb-14"
+                  >с 15.03 по 27.04</time
+                >
+                <h3 class="text-footerBg font-alt text-6xl mb-7">EVASION</h3>
+                <p class="text-footerBg text-xl mb-auto font-light">
+                  Комплекс для благоприятного<br />клеточного дыхания
+                </p>
+                <a
+                  href="#"
+                  class="button button--rounded self-end sm:w-14 sm:h-14 md:w-20 md:h-20"
+                  ><span class="button__text button__text-next text-xl"></span
+                ></a>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white sm:pt-7 md:pt-9 pb-12">
+          <div class="container">
+            <div
+              class="container flex sm:flex-col md:flex-row md:px-3 items-center md:items-start lg:items-center text-black"
+            >
+              <div
+                class="sm:text-center sm:flex-col sm:items-center md:items-start lg:items-center lg:flex-row flex md:text-left mb-5 md:mr-auto leading-5 relative lg:mb-0"
+              >
+                <img
+                  src="static/logo.svg"
+                  alt=""
+                  width="135"
+                  height="70"
+                  class="mr-2 sm:mb-2 sm:block md:-ml-7 lg:hidden md:mb-8 sm:w-15 sm:h-12 md:w-15 md:h-15"
+                />
+                <img
+                  src="static/logo.svg"
+                  alt=""
+                  width="135"
+                  height="70"
+                  class="mr-2 sm:hidden lg:block"
+                />
+                <span class="uppercase"
+                  >Магазин<br />профессиональной<br />
+                  косметики</span
+                >
+              </div>
+              <div class="flex flex-col items-end">
+                <div class="search__input flex bg-searchBg relative mb-3">
+                  <input
+                    type="search"
+                    placeholder="Поиск по каталогу"
+                    class="appearance-none border-none bg-transparent placeholder-black min-h-full min-w-full pl-5"
+                  />
+                  <svg
+                    class="search__icon absolute top-3 right-0"
+                    width="17"
+                    height="16.998"
+                    viewBox="0 0 17 16.998"
+                  >
+                    <g id="Page-1" transform="translate(-747.234 -554.786)">
+                      <g
+                        id="icon-111-search"
+                        transform="translate(747.234 554.786)"
+                      >
+                        <path
+                          id="search"
+                          d="M757.889,567.028a6.744,6.744,0,1,1,1.587-1.587l4.432,4.432a1.106,1.106,0,0,1,0,1.568l-.019.018a1.11,1.11,0,0,1-1.568,0l-4.432-4.432Zm-3.91-.339a5.158,5.158,0,1,0-5.158-5.158,5.158,5.158,0,0,0,5.158,5.158Z"
+                          transform="translate(-747.234 -554.786)"
+                          fill="#333335"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <ul
+                  class="flex w-full items-center justify-between sm:flex-col md:flex-row md:justify-end md:flex-wrap lg:justify-between"
+                >
+                  <li
+                    class="flex justify-center text-center flex-col mb-5 md:mr-14 md:text-left lg:mb-0 lg:mr-5"
+                  >
+                    <span class="text-xs">Телефон</span>
+                    <a
+                      class="text-black hover:text-black"
+                      href="tel:+7342222222"
+                      >+7 (342) 222-22-22</a
+                    >
+                  </li>
+                  <li
+                    class="flex text-center mb-5 justify-center flex-col md:text-left lg:mb-0 lg:mr-5"
+                  >
+                    <span class="text-xs">Почта</span>
+                    <a
+                      class="text-black hover:text-black"
+                      href="mailto:coformaopt@mail.ru"
+                      >coformaopt@mail.ru</a
+                    >
+                  </li>
+                  <li
+                    class="flex justify-center sm:flex-col md:flex-row lg:justify-between"
+                  >
+                    <a
+                      class="button uppercase mb-5 md:mr-2 lg:mb-0"
+                      href="mailto:coformaopt@mail.ru"
+                      >ЗАКАЗАТЬ ЗВОНОК</a
+                    >
+
+                    <ul class="flex justify-between">
+                      <li class="md:mr-2">
+                        <a
+                          href="#"
+                          class="button button--rounded w-9 h-9 flex items-center justify-center"
+                          ><svg
+                            width="13.232"
+                            height="7.948"
+                            viewBox="0 0 13.232 7.948"
+                          >
+                            <g
+                              id="Сгруппировать_10"
+                              data-name="Сгруппировать 10"
+                              transform="translate(-496.981 -51.539)"
+                            >
+                              <path
+                                id="Контур_10"
+                                data-name="Контур 10"
+                                d="M498.262,51.975c.243,0,.486.007.728,0a.6.6,0,0,1,.543.29q.263.386.512.782c.366.582.7,1.181,1.09,1.75a3.056,3.056,0,0,0,.476.585c.2.182.345.151.45-.1a3.019,3.019,0,0,0,.179-.941c.039-.466.033-.934.029-1.4,0-.347-.147-.491-.495-.5-.092,0-.183,0-.275,0-.035,0-.08.016-.1-.024s.02-.076.048-.1a2.536,2.536,0,0,1,1.369-.739,6.763,6.763,0,0,1,1.043-.029c.165,0,.33,0,.495,0a.493.493,0,0,1,.522.376,2.592,2.592,0,0,1,.09.857c0,.645-.073,1.29-.009,1.936a1.7,1.7,0,0,0,.127.56.319.319,0,0,0,.587.064,1.488,1.488,0,0,0,.2-.362,16.312,16.312,0,0,1,1.651-2.944.529.529,0,0,1,.457-.206,5.2,5.2,0,0,1,1.945.288.956.956,0,0,1,.113.049c.167.083.2.151.153.331a3.36,3.36,0,0,1-.413.865c-.4.669-.889,1.279-1.341,1.913a4.293,4.293,0,0,0-.259.4c-.181.323-.16.447.136.664a6.54,6.54,0,0,1,.927.837,7.379,7.379,0,0,1,.831,1,.8.8,0,0,1-.074,1.014.926.926,0,0,1-.665.287c-.509.007-1.018,0-1.526,0a.519.519,0,0,1-.366-.132q-.213-.2-.417-.4a10.15,10.15,0,0,0-.985-.9c-.073-.056-.149-.106-.225-.157a.713.713,0,0,0-.812-.071.92.92,0,0,0-.506.8,1.9,1.9,0,0,1-.057.517.42.42,0,0,1-.46.344,4.8,4.8,0,0,1-1.576-.178,4.712,4.712,0,0,1-1.721-1.055,12.675,12.675,0,0,1-3.187-4.592c-.151-.364-.3-.727-.451-1.092-.136-.337-.032-.531.331-.56.3-.024.595-.005.892-.005Z"
+                                transform="translate(0 0)"
+                                fill="#fff"
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="md:mr-2">
+                        <a
+                          href="#"
+                          class="button button--rounded w-9 h-9 items-center justify-center"
+                        >
+                          <svg
+                            width="12.53"
+                            height="8.813"
+                            viewBox="0 0 12.53 8.813"
+                          >
+                            <g
+                              id="nJGaBS.tif"
+                              transform="translate(-337.08 -52.397)"
+                            >
+                              <g
+                                id="Сгруппировать_11"
+                                data-name="Сгруппировать 11"
+                                transform="translate(337.08 52.397)"
+                              >
+                                <path
+                                  id="Контур_11"
+                                  data-name="Контур 11"
+                                  d="M337.08,59.056V54.167a1.916,1.916,0,0,1,1.8-1.666,7.178,7.178,0,0,1,1.113-.1q3.32.008,6.639,0a6.349,6.349,0,0,1,1.4.166,1.669,1.669,0,0,1,1.459,1.535,28.577,28.577,0,0,1,.047,4.832,2.13,2.13,0,0,1-1.786,2.187l-.445.092h-7.893A2.4,2.4,0,0,1,337.08,59.056Zm4.851-2.307c0,.4-.009.8,0,1.2.012.463.236.608.646.4q1.166-.589,2.314-1.215c.424-.231.423-.532-.006-.761-.768-.411-1.544-.808-2.324-1.2-.41-.2-.621-.062-.631.41C341.923,55.976,341.93,56.362,341.931,56.749Z"
+                                  transform="translate(-337.08 -52.397)"
+                                  fill="#fff"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="md:mr-2">
+                        <a
+                          href="#"
+                          class="button button--rounded w-9 h-9 items-center justify-center"
+                          ><svg
+                            width="10.475"
+                            height="10.474"
+                            viewBox="0 0 10.475 10.474"
+                          >
+                            <path
+                              id="Контур_9"
+                              data-name="Контур 9"
+                              d="M309.834,61.972c-1.052,0-2.1,0-3.157,0a2.014,2.014,0,0,1-2.008-1.521,2.12,2.12,0,0,1-.061-.519q-.006-3.192,0-6.384a2.014,2.014,0,0,1,1.739-2.028,2.192,2.192,0,0,1,.338-.019q3.157,0,6.313,0a2.015,2.015,0,0,1,2.026,1.573,2.144,2.144,0,0,1,.054.486q.005,3.174,0,6.348a2.026,2.026,0,0,1-1.75,2.046,2.356,2.356,0,0,1-.373.019Q311.4,61.973,309.834,61.972Zm-4.206-6.3v.13q0,2.046,0,4.092a1,1,0,0,0,1.054,1.057q3.156,0,6.313,0a1.007,1.007,0,0,0,1.06-1.067q0-2.04,0-4.08v-.127h-1.513c.053.319.12.631.152.945a2.394,2.394,0,0,1-.118.956,2.84,2.84,0,0,1-.429.85,2.9,2.9,0,0,1-.693.672,2.854,2.854,0,0,1-3.219.007,2.866,2.866,0,0,1-1.056-3.435Zm6.051,1.064a1.84,1.84,0,1,0-1.865,1.839A1.84,1.84,0,0,0,311.679,56.736Zm2.179-4.021H312.1v1.759h1.761"
+                              transform="translate(-304.604 -51.498)"
+                              fill="#fff"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="md:mr-2 lg:mr-0">
+                        <a
+                          href="#"
+                          class="button button--rounded w-9 h-9 items-center justify-center"
+                          ><svg
+                            width="5.145"
+                            height="11.152"
+                            viewBox="0 0 5.145 11.152"
+                          >
+                            <g
+                              id="Сгруппировать_9"
+                              data-name="Сгруппировать 9"
+                              transform="translate(-191.592 -52.157)"
+                            >
+                              <path
+                                id="Контур_8"
+                                data-name="Контур 8"
+                                d="M196.047,52.157c.185.006.369.014.554.015.075,0,.111.016.11.1,0,.57,0,1.14,0,1.709,0,.025,0,.05-.009.089h-.14c-.352,0-.7,0-1.056,0a.461.461,0,0,0-.521.475c-.016.4,0,.8,0,1.224h1.756l-.2,1.955H194.98v5.583h-2.287a1.112,1.112,0,0,1-.012-.118q0-2.646,0-5.293v-.164h-1.088V55.776h1.088c0-.056,0-.1,0-.14.005-.472-.018-.946.022-1.415a2.027,2.027,0,0,1,1.223-1.848,4.674,4.674,0,0,1,.766-.191c.045-.011.091-.017.137-.025Z"
+                                fill="#fff"
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <nav id="menu">
+        <ul>
+          <li>
+            <span>Продукция</span>
+            <ul>
+              <li><a href="/about/team/management">Категория 1</a></li>
+              <li><a href="/about/team/sales">Категория 2</a></li>
+              <li><a href="/about/team/development">Категория 3</a></li>
+            </ul>
+          </li>
+          <li><a href="/brands">Бренды</a></li>
+          <li>
+            <a href="/payment">Способы оплаты</a>
+          </li>
+          <li>
+            <a href="/shipment">Доставка и возврат</a>
+          </li>
+          <li><a href="/contact">Статьи</a></li>
+          <li><a href="/about">О компании</a></li>
+          <li><a href="/confidential">Политика конфиденциальности</a></li>
+        </ul>
+        <div
+          id="menu-search"
+          class="search__input flex bg-searchBg relative mb-3"
+        >
+          <input
+            type="search"
+            placeholder="Поиск по каталогу"
+            class="appearance-none border-none bg-transparent placeholder-black min-h-full min-w-full pl-5"
+          />
+          <svg
+            class="search__icon absolute top-3 right-0"
+            width="17"
+            height="16.998"
+            viewBox="0 0 17 16.998"
+          >
+            <g id="Page-1" transform="translate(-747.234 -554.786)">
+              <g id="icon-111-search" transform="translate(747.234 554.786)">
+                <path
+                  id="search"
+                  d="M757.889,567.028a6.744,6.744,0,1,1,1.587-1.587l4.432,4.432a1.106,1.106,0,0,1,0,1.568l-.019.018a1.11,1.11,0,0,1-1.568,0l-4.432-4.432Zm-3.91-.339a5.158,5.158,0,1,0-5.158-5.158,5.158,5.158,0,0,0,5.158,5.158Z"
+                  transform="translate(-747.234 -554.786)"
+                  fill="#333335"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+      </nav>
+    </div>
+    <script
+      src="mmenu-js-master 2/dist/mmenu.js"
+      type="text/javascript"
+    ></script>
+    <link
+      href="mmenu-js-master 2/dist/mmenu.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <script src="bundle.js"></script>
+  </body>
+</html>

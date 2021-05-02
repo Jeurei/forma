@@ -1,0 +1,36 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list__item {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 17.5px;
+}
+
+.list__item::after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: theme("colors.green");
+  top: 5px;
+  left: 0;
+  position: absolute;
+}
+
+.list--numeric {
+  counter-reset: counter;
+}
+
+.list--numeric .list__item::after {
+  counter-increment: counter;
+  content: counter(counter) ".";
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 0;
+  top: 0;
+  color: theme("colors.green");
+}

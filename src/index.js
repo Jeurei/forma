@@ -73,6 +73,18 @@ document.addEventListener("DOMContentLoaded", () => {
         .parent()
         .removeClass("open")
         .children(".caption")
+        .children(".dropdown--inner")
+        .text($(this).text());
+    });
+
+    $("main .dropdown > .list > .item").on("click", function () {
+      $(".dropdown > .list > .item").removeClass("selected");
+      $(this)
+        .addClass("selected")
+        .parent()
+        .parent()
+        .removeClass("open")
+        .children(".caption")
         .text($(this).text());
     });
 
@@ -88,4 +100,87 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const onNoveltyClickHandler = (evt) => {
+    document
+      .querySelectorAll(".novelty__bottom-img")
+      .forEach(
+        (el) =>
+          el.classList.contains("novelty__bottom-img--active") &&
+          el.classList.remove("novelty__bottom-img--active")
+      );
+    evt.target.parentNode.classList.add("novelty__bottom-img--active");
+  };
+
+  const onFilterLeftClickHandler = (evt) => {
+    document
+      .querySelectorAll(".button--filter")
+      .forEach(
+        (el) => el.classList.contains("active") && el.classList.remove("active")
+      );
+    evt.target.classList.add("active");
+  };
+
+  const onPaginationClickHandler = (evt) => {
+    document
+      .querySelectorAll(".catalog__pagination-item")
+      .forEach(
+        (el) => el.classList.contains("active") && el.classList.remove("active")
+      );
+    evt.currentTarget.classList.add("active");
+  };
+
+  document
+    .querySelectorAll(".novelty__bottom-img")
+    .forEach((el) => el.addEventListener("click", onNoveltyClickHandler));
+
+  document
+    .querySelectorAll(".button--filter")
+    .forEach((el) => el.addEventListener("click", onFilterLeftClickHandler));
+
+  document
+    .querySelectorAll(".catalog__pagination-item")
+    .forEach((el) => el.addEventListener("click", onPaginationClickHandler));
+
+  const novelty = document.querySelector(".novelty");
+  let currStep = 0;
+
+  const onNovNextClickHandler = () => {
+    if (currStep === 4) {
+      currStep = 0;
+      novelty.classList.remove("novelty--4");
+      return;
+    }
+
+    currStep && novelty.classList.remove(`novelty--${currStep}`);
+    currStep++;
+    novelty.classList.add(`novelty--${currStep}`);
+  };
+
+  const onNovPrevClickHandler = () => {
+    if (currStep === 0) {
+      currStep = 4;
+      novelty.classList.contains("novelty--1") &&
+        novelty.classList.add("novelty--1");
+      novelty.classList.add("novelty--4");
+      return;
+    }
+
+    if (currStep == 1) {
+      currStep -= 1;
+      novelty.classList.remove("novelty--1");
+      return;
+    }
+    currStep && novelty.classList.remove(`novelty--${currStep}`);
+    currStep -= 1;
+    novelty.classList.add(`novelty--${currStep}`);
+  };
+
+  novelty
+    .querySelector("#next")
+    .addEventListener("click", onNovNextClickHandler);
+
+  novelty
+    .querySelector("#prev")
+    .addEventListener("click", onNovPrevClickHandler);
 });

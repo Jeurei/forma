@@ -1,13 +1,13 @@
 .filter__icon {
   display: none;
-  left: -24px;
+  left: -34px;
   top: 10px;
 }
 
 .filter__routed-text {
   display: none;
-  left: 20px;
-  transform: rotate(-90deg) translate(-120px, -400px);
+  left: 10px;
+  transform: rotate(-90deg) translate(-200px, -395px);
 }
 
 .filter__control {
@@ -19,6 +19,10 @@
   justify-content: center;
   margin-bottom: 10px;
   min-width: 100px;
+}
+
+.filter__control .list {
+  @apply font-alt;
 }
 
 .filter__control::after {

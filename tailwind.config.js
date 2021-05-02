@@ -42,6 +42,10 @@ module.exports = {
       searchBg: "#FAE9DC",
       ocean: "rgba(222,236,234)",
       footerBg: "#333335",
+      ocean: "#9DCECD",
+      darkOp: "rgba(0,0,0,0.7)",
+      beige: "#F9F7F6",
+      orange: "#D06831",
     },
 
     extend: {},

@@ -1,0 +1,24 @@
+.breadcrumbs {
+  padding-top: 16px;
+  margin-bottom: 50px;
+}
+
+.breadcrumbs ul {
+  flex-wrap: wrap;
+}
+
+.breadcrumb {
+  position: relative;
+  padding-right: 10px;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.breadcrumb::after {
+  content: "/";
+  position: absolute;
+  right: 1px;
+}
+
+.breadcrumb:last-child::after {
+  display: none;
+}

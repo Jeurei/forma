@@ -1,3 +1,4 @@
+@import "./components/common.css";
 @import "./components/button.css";
 @import "./components/select.css";
 @import "./components/header.css";
@@ -12,3 +13,9 @@
 @import "./components/shares.css";
 @import "./components/swiper.css";
 @import "./components/mmenu.css";
+@import "./components/active.css";
+@import "./components/breadcrumbs.css";
+@import "./components/products.css";
+@import "./components/article.css";
+@import "./components/custom.css";
+@import "./components/list.css";

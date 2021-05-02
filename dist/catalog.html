@@ -11,39 +11,39 @@
       <header>
         <div class="header-top min-w-full bg-no-repeat bg-green py-3 px-3">
           <div
-            class="container flex sm:flex-col md:flex-row items-center text-white"
+            class="container flex sm:flex-col md:flex-row items-center text-white relative"
           >
             <div
-              class="sm:text-center sm:flex-col sm:items-center md:items-stretch md:flex-row flex md:text-left mb-5 md:mr-auto leading-5 relative"
+              class="sm:text-center sm:flex-col sm:items-center md:items-center md:flex-row flex md:text-left mb-5 md:mr-auto leading-5"
             >
               <img
-                src="https://via.placeholder.com/30x30.png"
+                src="static/logo.svg"
                 alt=""
-                width="170"
-                height="55"
-                class="mr-2 sm:mb-2 md:mb-0 sm:block lg:hidden sm:w-9 sm:h-9 md:w-12 md:h-12 md:self-center"
+                width="135"
+                height="72"
+                class="mr-2 sm:mb-2 md:mb-0 sm:block lg:hidden sm:w-15 sm:h-12 md:w-12 md:h-15 md:self-center"
               />
               <img
-                src="https://via.placeholder.com/170x55.png"
+                src="static/logo.svg"
                 alt=""
-                width="170"
-                height="55"
+                width="135"
+                height="72"
                 class="mr-2 sm:hidden lg:block"
               />
-              <span class="uppercase"
+              <span class="font-alt md:text-sm lg:text-base uppercase"
                 >Магазин<br />профессиональной<br />
                 косметики</span
               >
-              <div class="header-mmenu sm:block absolute -right-12 md:hidden">
+              <div class="header-mmenu sm:block absolute right-0 md:hidden">
                 <a class="header__burger" href="#menu"></a>
               </div>
             </div>
-            <div>
+            <div class="w-full md:w-auto">
               <div class="search__input flex bg-searchBg relative mb-3">
                 <input
                   type="search"
                   placeholder="Поиск по каталогу"
-                  class="appearance-none border-none bg-transparent placeholder-black min-h-full min-w-full pl-5"
+                  class="appearance-none border-none bg-transparent placeholder-black text-black min-h-full min-w-full pl-5"
                 />
                 <svg
                   class="search__icon absolute top-3 right-0"
@@ -66,7 +66,9 @@
                   </g>
                 </svg>
               </div>
-              <ul class="flex items-center sm:hidden md:flex justify-between">
+              <ul
+                class="flex items-center sm:hidden md:flex justify-between lg:pr-3"
+              >
                 <li class="flex justify-center flex-col">
                   <span class="text-xs">Телефон</span>
                   <a class="text-white hover:text-white" href="tel:+7342222222"
@@ -81,9 +83,20 @@
                     >coformaopt@mail.ru</a
                   >
                 </li>
-                <li class="flex justify-center flex-col">
-                  <span class="text-xs">Ваш язык</span>
-                  <span class="relative dropdown">RU</span>
+                <li class="flex justify-center flex-col relative">
+                  <div class="drop-container">
+                    <div class="dropdown font-main">
+                      <div class="caption flex flex-col">
+                        <span class="text-xs">Ваш язык</span>
+                        <span class="relative dropdown--inner">RU</span>
+                      </div>
+                      <div class="list">
+                        <div class="item text-black">RU</div>
+                        <div class="item text-black">EU</div>
+                        <div class="item text-black">CZ</div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li class="w-12 h-12">
                   <button
@@ -160,27 +173,34 @@
             </div>
           </div>
         </div>
-        <div class="min-w-full sm:hidden md:block md:px-2 bg-black py-4">
+        <div class="min-w-full sm:hidden md:block md:px-2 bg-black relative">
           <div class="container">
             <ul class="flex justify-between items center min-w-full">
-              <li>
+              <li class="header__menu-item py-4">
                 <a class="text-white hover:text-white" href="#">Продукция</a>
+                <div class="header__menu-sub hidden absolute">
+                  <ul class="container flex items-center flex-wrap">
+                    <li class="button--filter">Категория 1</li>
+                  </ul>
+                </div>
               </li>
-              <li><a class="text-white hover:text-white" href="#">Акции</a></li>
-              <li>
+              <li class="py-4">
+                <a class="text-white hover:text-white" href="#">Акции</a>
+              </li>
+              <li class="py-4">
                 <a class="text-white hover:text-white" href="#">Статьи</a>
               </li>
-              <li>
+              <li class="py-4">
                 <a class="text-white hover:text-white" href="#"
                   >Способы оплаты</a
                 >
               </li>
-              <li>
+              <li class="py-4">
                 <a class="text-white hover:text-white" href="#"
                   >Доставка и возврат</a
                 >
               </li>
-              <li>
+              <li class="py-4">
                 <a class="text-white hover:text-white" href="#">О компании</a>
               </li>
             </ul>
@@ -189,8 +209,13 @@
       </header>
       <main>
         <h1 class="hidden">Форма Каталог</h1>
-        <section class="catalog pt-14 pb-4 flex flex-col">
+        <section class="catalog pt-6 pb-4 flex flex-col">
           <div class="container min-h-full">
+            <div class="breadcrumbs">
+              <ul class="flex">
+                <li class="breadcrumb font-alt text-xs text-black">Каталог</li>
+              </ul>
+            </div>
             <h2
               class="text-3xl uppercase font-alt text-black flex justify-center mb-11 sm:text-2xl text-center md:text-3xl"
             >
@@ -198,7 +223,7 @@
             </h2>
             <div class="flex min-h-full">
               <div class="flex w-full">
-                <div class="relative mr-8 w-1/5 sm:hidden md:block">
+                <div class="relative mr-8 sm:hidden md:block">
                   <svg
                     class="filter__icon absolute hidden desk:block"
                     width="28"
@@ -239,19 +264,21 @@
                     </g>
                   </svg>
                   <span
-                    class="filter__routed-text absolute font-alt text-4xl text-black min-w-md whitespace-pre hidden desk:block"
+                    class="filter__routed-text absolute font-alt text-4xl text-black min-w-md uppercase whitespace-pre hidden desk:block"
                     >Задача перед препоратом</span
                   >
                   <ul class="grid gap-y-2 justify-center">
-                    <li class="button--filter">Деградация кожи</li>
-                    <li class="button--filter">Деградация кожи</li>
-                    <li class="button--filter">Деградация кожи</li>
-                    <li class="button--filter">Деградация кожи</li>
-                    <li class="button--filter">Деградация кожи</li>
-                    <li class="button--filter">Деградация кожи</li>
-                    <li class="button--filter">Деградация кожи</li>
-                    <li class="button--filter">Деградация кожи</li>
-                    <li class="button--filter">Деградация кожи</li>
+                    <li class="button--filter active font-alt">
+                      Деградация кожи
+                    </li>
+                    <li class="button--filter font-alt">Деградация кожи</li>
+                    <li class="button--filter font-alt">Деградация кожи</li>
+                    <li class="button--filter font-alt">Деградация кожи</li>
+                    <li class="button--filter font-alt">Деградация кожи</li>
+                    <li class="button--filter font-alt">Деградация кожи</li>
+                    <li class="button--filter font-alt">Деградация кожи</li>
+                    <li class="button--filter font-alt">Деградация кожи</li>
+                    <li class="button--filter font-alt">Деградация кожи</li>
                   </ul>
                 </div>
                 <div class="catalog__list relative w-full">
@@ -263,22 +290,22 @@
                       >
                         <div class="swiper-wrapper">
                           <div class="swiper-slide flex justify-center">
-                            <a href="#" class="button--filter"
+                            <a href="#" class="button--filter font-alt"
                               >Деградация кожи</a
                             >
                           </div>
                           <div class="swiper-slide flex justify-center">
-                            <a href="#" class="button--filter"
+                            <a href="#" class="button--filter font-alt"
                               >Деградация кожи</a
                             >
                           </div>
                           <div class="swiper-slide flex justify-center">
-                            <a href="#" class="button--filter"
+                            <a href="#" class="button--filter font-alt"
                               >Деградация кожи</a
                             >
                           </div>
                           <div class="swiper-slide flex justify-center">
-                            <a href="#" class="button--filter"
+                            <a href="#" class="button--filter font-alt"
                               >Деградация кожи</a
                             >
                           </div>
@@ -351,16 +378,20 @@
                       </ul>
                       <div class="justify-end hidden lg:flex">
                         <button
-                          class="button flex justify-center items-center md:w-11 lg:w-28"
+                          class="button flex justify-center items-center w-28"
                           type="button"
                         >
-                          <
+                          <span
+                            class="button__arrow button__arrow--left w-full h-full block"
+                          ></span>
                         </button>
                         <button
-                          class="button flex justify-center items-center ml-3 md:w-11 lg:w-28"
+                          class="button flex justify-center items-center ml-3 w-28"
                           type="button"
                         >
-                          >
+                          <span
+                            class="button__arrow button__arrow--right w-full h-full block"
+                          ></span>
                         </button>
                       </div>
                     </div>
@@ -376,9 +407,9 @@
                         />
                       </picture>
                       <h3 class="uppercase text-xl font-alt text-black mb-4">
-                        ABSOLUT AIR
+                        <a href="#">ABSOLUT AIR</a>
                       </h3>
-                      <p class="text-black text-xs mb-4">
+                      <p class="text-black text-xs mb-4 font-light">
                         Комплекс для благоприятного<br />клеточного дыхания
                       </p>
                       <div class="grid grid-cols-1 gap-x-6">
@@ -438,9 +469,9 @@
                         />
                       </picture>
                       <h3 class="uppercase text-xl font-alt text-black mb-4">
-                        ABSOLUT AIR
+                        <a href="#">ABSOLUT AIR</a>
                       </h3>
-                      <p class="text-black text-xs mb-4">
+                      <p class="text-black text-xs mb-4 font-light">
                         Комплекс для благоприятного<br />клеточного дыхания
                       </p>
                       <div class="grid grid-cols-1 gap-x-3">
@@ -474,11 +505,13 @@
                         />
                       </picture>
                       <h3 class="uppercase text-xl font-alt text-black mb-4">
-                        ABSOLUT AIR
+                        <a href="#">ABSOLUT AIR</a>
                       </h3>
-                      <div class="flex items-center sm:flex-wrap">
+                      <div
+                        class="flex items-center sm:flex-wrap lg:flex-nowrap"
+                      >
                         <p
-                          class="text-black text-xs leading-2 m-0 mr-auto w-full sm:mb-5"
+                          class="text-black text-xs leading-2 m-0 mr-auto w-full sm:mb-5 lg:w-1/3 whitespace-nowrap lg:mb-0 lg:mr-2 font-light"
                         >
                           Комплекс для <br class="sm:hidden lg:block" />
                           благоприятного<br />клеточного дыхания
@@ -519,20 +552,21 @@
                         />
                       </picture>
                       <h3 class="uppercase text-xl font-alt text-black mb-4">
-                        ABSOLUT AIR
+                        <a href="#">ABSOLUT AIR</a>
                       </h3>
                       <div
                         class="flex items-center sm:flex-wrap lg:flex-nowrap"
                       >
                         <p
-                          class="text-black text-xs leading-2 m-0 mr-auto w-full sm:mb-5"
+                          class="text-black text-xs whitespace-nowrap leading-2 m-0 mr-auto w-full sm:mb-5 lg:w-1/3 lg:mb-0 lg:mr-2 font-light"
                         >
                           Комплекс для <br class="sm:hidden lg:block" />
                           благоприятного<br />клеточного дыхания
                         </p>
                         <div class="grid grid-cols-1 gap-x-3 gap-y-2 w-full">
                           <div class="flex items-center">
-                            <span class="price--old">5 000 руб.</span
+                            <span class="price--old whitespace-nowrap"
+                              >5 000 руб.</span
                             ><button
                               type="button"
                               class="button--filter button--add"
@@ -541,7 +575,8 @@
                             </button>
                           </div>
                           <div class="flex items-center">
-                            <span class="price">3 999 руб.</span
+                            <span class="price whitespace-nowrap"
+                              >3 999 руб.</span
                             ><button
                               type="button"
                               class="button--filter button--buy"
@@ -562,9 +597,9 @@
                         />
                       </picture>
                       <h3 class="uppercase text-xl font-alt text-black mb-4">
-                        ABSOLUT AIR
+                        <a href="#">ABSOLUT AIR</a>
                       </h3>
-                      <p class="text-black text-xs mb-4">
+                      <p class="text-black text-xs mb-4 font-light">
                         Комплекс для благоприятного<br />клеточного дыхания
                       </p>
                       <div class="grid grid-cols-1 gap-x-6">
@@ -624,9 +659,9 @@
                         />
                       </picture>
                       <h3 class="uppercase text-xl font-alt text-black mb-4">
-                        ABSOLUT AIR
+                        <a href="#">ABSOLUT AIR</a>
                       </h3>
-                      <p class="text-black text-xs mb-4">
+                      <p class="text-black text-xs mb-4 font-light">
                         Комплекс для благоприятного<br />клеточного дыхания
                       </p>
                       <div class="grid grid-cols-1 gap-x-3">
@@ -658,9 +693,9 @@
                     Загрузить еще
                   </button>
                   <ul
-                    class="catalog__pagination absolute top-0 right-0 flex flex-col"
+                    class="catalog__pagination hidden absolute top-0 right-0 flex-col"
                   >
-                    <li class="catalog__pagination-item mb-2">
+                    <li class="catalog__pagination-item active mb-2">
                       <span class="z-10">1</span>
                     </li>
                     <li class="catalog__pagination-item mb-2">
@@ -688,13 +723,17 @@
                   class="button flex justify-center items-center w-28"
                   type="button"
                 >
-                  <
+                  <span
+                    class="button__arrow button__arrow--left w-full h-full block"
+                  ></span>
                 </button>
                 <button
                   class="button flex justify-center items-center ml-3 w-28"
                   type="button"
                 >
-                  >
+                  <span
+                    class="button__arrow button__arrow--right w-full h-full block"
+                  ></span>
                 </button>
               </div>
             </div>
@@ -706,7 +745,7 @@
                   >с 15.03 по 27.04</time
                 >
                 <h3 class="text-footerBg font-alt text-6xl mb-7">EVASION</h3>
-                <p class="text-footerBg text-xl mb-auto">
+                <p class="text-footerBg text-xl mb-auto font-light">
                   Комплекс для благоприятного<br />клеточного дыхания
                 </p>
                 <a
@@ -721,10 +760,25 @@
         <section class="bg-white sm:pt-7 md:pt-9 pb-12">
           <div class="container">
             <div
-              class="container flex sm:flex-col md:flex-row md:px-3 items-center text-black"
+              class="container flex sm:flex-col md:flex-row md:px-3 items-center md:items-start lg:items-center text-black"
             >
-              <div class="mb-5 sm:text-center md:mr-auto md:text-left">
-                <img src="" alt="" />
+              <div
+                class="sm:text-center sm:flex-col sm:items-center md:items-start lg:items-center lg:flex-row flex md:text-left mb-5 md:mr-auto leading-5 relative lg:mb-0"
+              >
+                <img
+                  src="static/logo.svg"
+                  alt=""
+                  width="135"
+                  height="70"
+                  class="mr-2 sm:mb-2 sm:block md:-ml-7 lg:hidden md:mb-8 sm:w-15 sm:h-12 md:w-15 md:h-15"
+                />
+                <img
+                  src="static/logo.svg"
+                  alt=""
+                  width="135"
+                  height="70"
+                  class="mr-2 sm:hidden lg:block"
+                />
                 <span class="uppercase"
                   >Магазин<br />профессиональной<br />
                   косметики</span
@@ -759,10 +813,10 @@
                   </svg>
                 </div>
                 <ul
-                  class="flex w-full items-center justify-between sm:flex-col md:flex-row md:justify-center md:flex-wrap"
+                  class="flex w-full items-center justify-between sm:flex-col md:flex-row md:justify-end md:flex-wrap lg:justify-between"
                 >
                   <li
-                    class="flex justify-center text-center flex-col mb-5 md:mr-14 md:text-left"
+                    class="flex justify-center text-center flex-col mb-5 md:mr-14 md:text-left lg:mb-0 lg:mr-5"
                   >
                     <span class="text-xs">Телефон</span>
                     <a
@@ -772,7 +826,7 @@
                     >
                   </li>
                   <li
-                    class="flex text-center mb-5 justify-center flex-col md:text-left"
+                    class="flex text-center mb-5 justify-center flex-col md:text-left lg:mb-0 lg:mr-5"
                   >
                     <span class="text-xs">Почта</span>
                     <a
@@ -782,10 +836,10 @@
                     >
                   </li>
                   <li
-                    class="flex justify-center sm:flex-col md:flex-row lg:ml-9"
+                    class="flex justify-center sm:flex-col md:flex-row lg:justify-between"
                   >
                     <a
-                      class="button uppercase mb-5 md:mr-2"
+                      class="button uppercase mb-5 md:mr-2 lg:mb-0"
                       href="mailto:coformaopt@mail.ru"
                       >ЗАКАЗАТЬ ЗВОНОК</a
                     >
@@ -866,7 +920,7 @@
                           </svg>
                         </a>
                       </li>
-                      <li class="md:mr-2">
+                      <li class="md:mr-2 lg:mr-0">
                         <a
                           href="#"
                           class="button button--rounded w-9 h-9 items-center justify-center"
@@ -960,19 +1014,19 @@
           <li>
             <span href="/brands">Бренды</span>
             <ul>
-              <li><a href="#">Бренд 1</a></li>
+              <li><a href="/">Бренд 1</a></li>
             </ul>
           </li>
           <li>
             <span href="/payment">Категории</span>
             <ul>
-              <li><a href="#">Категория 1</a></li>
+              <li><a href="/">Категория 1</a></li>
             </ul>
           </li>
           <li>
             <span href="/payment">Тип</span>
             <ul>
-              <li><a href="#">Тип 1</a></li>
+              <li><a href="/">Тип 1</a></li>
             </ul>
           </li>
         </ul>

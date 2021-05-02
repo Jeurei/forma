@@ -1,5 +1,5 @@
 html {
-  @apply box-border;
+  @apply box-border overflow-x-hidden;
 }
 
 *,
@@ -26,6 +26,14 @@ img {
 
 button {
   @apply cursor-pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 @media (min-width: theme("screens.md")) {

@@ -1,12 +1,29 @@
 .novelty {
   min-height: 600px;
   background-image: url("./img/main-block-bg.png");
-  background-position: -210px 0;
+  background-position: 0;
+}
+
+.novelty--1 {
+  background-image: url("./img/nov-1.png");
+}
+
+.novelty--2 {
+  background-image: url("./img/nov-2.png");
+  background-position: center;
+}
+
+.novelty--3 {
+  background-image: url("./img/nov-3.png");
+}
+
+.novelty--4 {
+  background-image: url("./img/nov-4.png");
 }
 
 .novelty__img {
-  left: 90px;
-  bottom: -170px;
+  left: 150px;
+  bottom: -80px;
 }
 
 .novelty__bottom {
@@ -55,27 +72,40 @@
 @media (min-width: theme("screens.md")) {
   .novelty {
     min-height: 700px;
-    background-position: left;
+    background-position: center;
   }
 
   .novelty__img {
     left: 210px;
-    bottom: -120px;
+    bottom: -70px;
   }
 }
 
 @media (min-width: theme("screens.lg")) {
-  .novelty {
-    background-position: left;
-  }
   .novelty__img {
     left: 210px;
-    bottom: -100px;
+    bottom: -80px;
   }
 }
 
 @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
   .novelty {
     background-image: url("./img/main-block-bg.png");
+  }
+
+  .novelty--1 {
+    background-image: url("./img/nov-1.png");
+  }
+
+  .novelty--2 {
+    background-image: url("./img/nov-2.png");
+  }
+
+  .novelty--3 {
+    background-image: url("./img/nov-3.png");
+  }
+
+  .novelty--4 {
+    background-image: url("./img/nov-4.png");
   }
 }

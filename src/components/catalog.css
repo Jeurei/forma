@@ -47,7 +47,7 @@
   }
 }
 
-@media (min-width: theme("screens.lg")) {
+@media (min-width: 1380px) {
   .catalog__list::before {
     display: block;
   }
@@ -63,6 +63,7 @@
   .catalog__pagination {
     right: -40px;
     top: 60px;
+    display: flex;
   }
 
   .catalog__pagination-item {

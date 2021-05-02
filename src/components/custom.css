@@ -1,0 +1,39 @@
+.img__container {
+  min-width: 327px;
+  height: 408px;
+  margin-right: 45px;
+}
+
+.img__container img {
+  object-fit: cover;
+}
+
+.custom__slider-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom__slider-item .plus-icon {
+  display: none;
+}
+
+.custom__slider-item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.custom__slider-item:hover::after {
+  opacity: 1;
+}
+
+.custom__slider-item:hover .plus-icon {
+  display: block;
+}

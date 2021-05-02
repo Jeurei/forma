@@ -4,11 +4,19 @@
   margin-right: auto;
 }
 
+.price--big {
+  font-size: 21px;
+}
+
 .price--old {
   font-size: 11px;
   text-decoration: line-through;
   color: #000;
   margin-right: auto;
+}
+
+.price--old--big {
+  font-size: 14px;
 }
 
 @media (min-width: theme("screens.md")) {

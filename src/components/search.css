@@ -4,6 +4,14 @@
   min-height: 39px;
 }
 
+.search__input input {
+  font-weight: 600;
+}
+
+.search__input input:not(:placeholder-shown) + .search__icon {
+  display: none;
+}
+
 .search__icon {
   top: 11px;
   right: 20px;

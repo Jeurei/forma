@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <g id="arrow-left" transform="translate(-375 -2699)">
+    <g id="Эллипс_15" data-name="Эллипс 15" transform="translate(375 2728) rotate(-90)" fill="#fff" stroke="#212121" stroke-width="1">
+      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+    </g>
+    <g id="arrow" transform="translate(400 2721.404) rotate(180)">
+      <path id="Line" d="M0,0H18.957" transform="translate(0 8.113)" fill="none" stroke="#333335" stroke-linecap="round" stroke-width="1" fill-rule="evenodd"/>
+      <path id="Head" d="M0,0,8.113,8.113,0,16.225" transform="translate(11.135 0)" fill="none" stroke="#333335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

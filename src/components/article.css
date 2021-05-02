@@ -1,0 +1,17 @@
+.article__img-container {
+  background-image: url("./img/article-bg.png");
+  min-height: 313px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.article .button__arrow--left::after,
+.article .button__arrow--right::after {
+  top: 4px;
+}
+
+@media (min-width: theme("screens.lg")) {
+  .article {
+    min-width: 465px;
+  }
+}

@@ -2,6 +2,10 @@
   background-color: transparent;
 }
 
+.caption {
+  @apply font-alt;
+}
+
 .dropdown > .caption {
   background-color: transparent;
   border-radius: 3px;
